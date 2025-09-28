@@ -3,7 +3,6 @@ Menu-driven score program
 """
 
 def main():
-    print("Welcome to the Score Program!")
     score = get_valid_score()
 
     choice = ""
@@ -25,11 +24,7 @@ def main():
 
 def print_menu():
     """Display the menu options."""
-    print("Menu:")
-    print("(G)et a valid score")
-    print("(P)rint result")
-    print("(S)how stars")
-    print("(Q)uit")
+    print("Menu:\n (G)et a valid score\n (P)rint result\n (S)how stars\n (Q)uit")
 
 
 def get_valid_score():
