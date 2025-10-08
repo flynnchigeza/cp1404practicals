@@ -1,6 +1,6 @@
 """
-CP1404 Prac
-Starter code for cumulative total income program
+CP1404 Prac 4
+Calculating a List of Cumulative Totals
 """
 
 

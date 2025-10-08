@@ -1,6 +1,6 @@
 """
-CP1404/CP5632 Practical
-Data file -> lists program
+CP1404 Prac 4
+Converting Data Strings to Lists
 """
 
 FILENAME = "subject_data.txt"
