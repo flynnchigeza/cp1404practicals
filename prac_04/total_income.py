@@ -1,5 +1,5 @@
 """
-CP1404/CP5632 Practical
+CP1404 Prac
 Starter code for cumulative total income program
 """
 
