@@ -1,3 +1,8 @@
+"""
+CP1404 prac 5
+emails task
+"""
+
 def main():
     """Create dictionary of emails-to-names."""
     email_to_name = {}
