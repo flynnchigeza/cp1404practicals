@@ -1,5 +1,6 @@
 """
-program to count the occurrences of words in a string.
+CP1404 prac 5
+word occurrences task
 estimate: 3 seconds
 a
 """

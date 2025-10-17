@@ -1,3 +1,7 @@
+"""
+CP1404 prac 5
+HEX COLOURS task
+"""
 colour_codes = {
     "aqua": "#00ffff",
     "alizarin": "#e32636",
@@ -20,4 +24,4 @@ while colour_name != "":
     else:
         print("Invalid colour name.")
         colour_name = input("Enter a colour name: ").lower()
-    print("Goodbye!")
+print("Goodbye!")
