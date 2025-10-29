@@ -2,7 +2,7 @@
 CP1404 Programming language task
 """
 
-class programming_language:
+class ProgrammingLanguage:
 
     def __init__(self, name, typing, reflection, year):
         self.name = name
@@ -18,9 +18,9 @@ class programming_language:
 
 
 def run_tests():
-    ruby = programming_language("Ruby", "Dynamic", True, 1995)
-    python = programming_language("Python", "Dynamic", True, 1991)
-    visual_basic = programming_language("Visual Basic", "Static", False, 1991)
+    ruby = ProgrammingLanguage("Ruby", "Dynamic", True, 1995)
+    python = ProgrammingLanguage("Python", "Dynamic", True, 1991)
+    visual_basic = ProgrammingLanguage("Visual Basic", "Static", False, 1991)
 
     languages = [ruby, python, visual_basic]
     print(python)

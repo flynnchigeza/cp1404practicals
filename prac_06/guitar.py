@@ -4,7 +4,7 @@ CP1404 Guitar task
 current_year = 2025
 vintage_age = 50
 
-class guitar:
+class Guitar:
     def __init__(self, name, year, cost):
         self.name = name
         self.year = year
