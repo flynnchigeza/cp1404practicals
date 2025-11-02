@@ -1,8 +1,9 @@
 """
 CP1404 prac 5
 HEX COLOURS task
+Look up hexadecimal colour codes by name.
 """
-colour_codes = {
+COLOUR_CODES = {
     "aqua": "#00ffff",
     "alizarin": "#e32636",
     "baby blue": "#89cff0",
@@ -15,11 +16,11 @@ colour_codes = {
     "canary yellow": "#ffff99"
 }
 
-"""Look up hexadecimal colour codes by name."""
+
 colour_name = input("Enter a colour name: ").lower()
 while colour_name != "":
-    if colour_name in colour_codes:
-        print(f"{colour_name.title()} is {colour_codes[colour_name]}")
+    if colour_name in COLOUR_CODES:
+        print(f"{colour_name.title()} is {COLOUR_CODES[colour_name]}")
         colour_name = input("Enter a colour name: ").lower()
     else:
         print("Invalid colour name.")

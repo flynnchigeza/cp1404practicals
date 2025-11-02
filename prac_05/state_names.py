@@ -1,10 +1,8 @@
 """
-CP1404 prac 5
-state name task
-
+CP1404 prac 5 state name program
+Displays state abbreviations and allows users to look up full state names.
 """
 
-# TODO: Reformat this file so the dictionary code follows PEP 8 convention
 CODE_TO_NAME = {
     "QLD": "Queensland",
     "NSW": "New South Wales",
@@ -18,10 +16,11 @@ CODE_TO_NAME = {
 
 for code, name in CODE_TO_NAME.items():
     print(f"{code:3} is {name}")
-    state_code = input("Enter short state: ")
+
+state_code = input("Enter short state: ").upper()
 while state_code != "":
-    if state_code in CODE_TO_NAME:
-        print(state_code, "is", CODE_TO_NAME[state_code])
-    else:
+    try:
+        print(f"{state_code} is {CODE_TO_NAME[state_code]}")
+    except KeyError:
         print("Invalid short state")
-    state_code = input("Enter short state: ")
+    state_code = input("Enter short state: ").upper()

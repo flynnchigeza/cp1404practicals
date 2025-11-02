@@ -28,7 +28,7 @@ def process_records(records):
 
 
 def display_results(champion_to_count, countries):
-    """Display champions and countries"""
+    """Display champions and countries."""
     print("Wimbledon Champions: ")
     for name, count in champion_to_count.items():
         print(name, count)
