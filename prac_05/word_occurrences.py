@@ -8,7 +8,7 @@ a
 from collections import defaultdict
 
 word_to_count = defaultdict(int)  # default value of int is 0
-text = "this is a collection of words of nice words this is a fun thing it is"
+text = input("Enter some text: ")
 words = text.split()
 
 for word in words:
