@@ -1,0 +1,25 @@
+BoxLayout:
+    orientation: 'vertical'
+
+    # Container for dynamic Labels
+    BoxLayout:
+        orientation: 'vertical'
+        id: entries_box
+
+    # Status label
+    Label:
+        size_hint_y: 0.1
+        text: app.status_text
+
+    # Buttons for creating/clearing Labels
+    BoxLayout:
+        orientation: 'horizontal'
+        size_hint_y: 0.2
+
+        Button:
+            text: "Create Labels"
+            on_press: app.create_widgets()
+
+        Button:
+            text: "Clear Labels"
+            on_press: app.clear_all()

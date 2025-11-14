@@ -1,0 +1,39 @@
+BoxLayout:
+    orientation: 'vertical'
+    padding: 10
+    spacing: 10
+
+    # --- Top section: miles input and Up/Down buttons ---
+    BoxLayout:
+        orientation: 'horizontal'
+        spacing: 10
+
+        TextInput:
+            id: input_miles
+            text: '0'
+            multiline: False
+            on_text: app.handle_text()  # update result as you type
+            font_size: 24
+
+        BoxLayout:
+            orientation: 'vertical'
+            size_hint_x: 0.3
+            spacing: 5
+
+            Button:
+                text: 'Up'
+                on_press: app.handle_increment(1)
+            Button:
+                text: 'Down'
+                on_press: app.handle_increment(-1)
+
+    # --- Convert button (can comment out later) ---
+    Button:
+        text: 'Convert'
+        on_press: app.handle_convert()
+
+    # --- Output label ---
+    Label:
+        text: app.output_text
+        color: (1, 1, 0, 1)  # yellow text
+        font_size: 32
